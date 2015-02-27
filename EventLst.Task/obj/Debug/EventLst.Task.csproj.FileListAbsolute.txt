@@ -1,0 +1,15 @@
+\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Task\bin\Debug\EventLst.Task.exe.config
+\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Task\bin\Debug\EventLst.Task.exe
+\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Task\bin\Debug\EventLst.Task.pdb
+\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Task\obj\Debug\EventLst.Task.csprojResolveAssemblyReference.cache
+\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Task\obj\Debug\EventLst.Task.exe
+\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Task\obj\Debug\EventLst.Task.pdb
+\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Task\bin\Debug\Common.Logging.Core.dll
+\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Task\bin\Debug\Common.Logging.dll
+\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Task\bin\Debug\Quartz.dll
+\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Task\bin\Debug\Common.Logging.pdb
+\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Task\bin\Debug\Common.Logging.xml
+\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Task\bin\Debug\Common.Logging.Core.pdb
+\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Task\bin\Debug\Common.Logging.Core.xml
+\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Task\bin\Debug\Quartz.pdb
+\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Task\bin\Debug\Quartz.xml
