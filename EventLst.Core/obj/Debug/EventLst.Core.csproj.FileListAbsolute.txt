@@ -1,5 +1,0 @@
-\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Core\bin\Debug\EventLst.Core.dll
-\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Core\bin\Debug\EventLst.Core.pdb
-\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Core\obj\Debug\EventLst.Core.csprojResolveAssemblyReference.cache
-\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Core\obj\Debug\EventLst.Core.dll
-\\psf\Host\Stuff\code bases\2015\EventLst\EventLst.Core\obj\Debug\EventLst.Core.pdb
