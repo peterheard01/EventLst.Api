@@ -39,6 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventModel.cs" />
+    <Compile Include="EventsLoader.cs" />
+    <Compile Include="IEventProvider.cs" />
     <Compile Include="Job.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

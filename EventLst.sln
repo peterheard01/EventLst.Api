@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventLst.Web", "EventLst.We
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventLst.Core", "EventLst.Core\EventLst.Core.csproj", "{C7CCB346-C277-4436-819C-750828C458C1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventLst.Core.Tests", "EventLst.Core.Tests\EventLst.Core.Tests.csproj", "{4BE10B5C-5A55-4E37-802D-E41D554E2142}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C7CCB346-C277-4436-819C-750828C458C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7CCB346-C277-4436-819C-750828C458C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7CCB346-C277-4436-819C-750828C458C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BE10B5C-5A55-4E37-802D-E41D554E2142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BE10B5C-5A55-4E37-802D-E41D554E2142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BE10B5C-5A55-4E37-802D-E41D554E2142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BE10B5C-5A55-4E37-802D-E41D554E2142}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
