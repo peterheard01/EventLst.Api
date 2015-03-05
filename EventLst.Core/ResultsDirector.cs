@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Runtime.CompilerServices;
-using Newtonsoft.Json.Linq;
-
-namespace EventLst.Core
+﻿namespace EventLst.Core
 {
     public class ResultsDirector
     {
@@ -16,7 +11,6 @@ namespace EventLst.Core
 
         public void Construct()
         {
-
             _builder.Load();
 
             _builder.Map();

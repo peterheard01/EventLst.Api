@@ -1,16 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace EventLst.Core
 {
-    public interface IDtoMapper<T>
-    {
-        List<T> Map(dynamic json);
-    }
-
     public class EventsDtoMapper : IDtoMapper<EventModel>
     {
         public List<EventModel> Map(dynamic json)

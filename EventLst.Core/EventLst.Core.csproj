@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EventBuilder.cs" />
+    <Compile Include="IDtoMapper.cs" />
     <Compile Include="Models\EventModel.cs" />
     <Compile Include="EventsDtoMapper.cs" />
     <Compile Include="ResultsDirector.cs" />
