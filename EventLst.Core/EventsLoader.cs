@@ -11,35 +11,21 @@ namespace EventLst.Core
         public string Lat { get; set; }
 
         private IEventProvider _provider;
+        private EventsDtoMapper _mapper;
 
         public EventsLoader(IEventProvider injectedProvider)
         {
             _provider = injectedProvider;
+            _mapper = new EventsDtoMapper();
         }
 
         public List<EventModel> Load()
         {
             if (Lon == null || Lat == null) throw new Exception("You are missing longitude or latitude param");
 
-            var jsonDtoResult = LoadJson();
+            var json = LoadJson();
 
-            return MapDtoObjectsToModels(jsonDtoResult);
-        }
-
-        private List<EventModel> MapDtoObjectsToModels(dynamic jsonDtoResult)
-        {
-            var retModels = new List<EventModel>();
-            foreach (var dto in jsonDtoResult.results)
-            {
-                retModels.Add(new EventModel()
-                {
-                    Name = dto.name,
-                    DateAndTime = FromUnixTime(Convert.ToInt64(dto.time)),
-                    City = dto.venue.city,
-                    HtmlDescription = dto.description
-                });
-            }
-            return retModels;
+            return _mapper.Map(json);
         }
 
         private dynamic LoadJson()
@@ -48,10 +34,6 @@ namespace EventLst.Core
             return JObject.Parse(jsonAsString);
         }
 
-        private DateTime FromUnixTime(long unixTimeMilliSeconds)
-        {
-            var epoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
-            return epoch.AddSeconds(unixTimeMilliSeconds / 1000);
-        }
+
     }
 }
