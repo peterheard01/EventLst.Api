@@ -45,7 +45,7 @@ namespace EventLst.Core.Tests
         }
 
         [Test]
-        public void Will_Load_Four_Models_When_4_Results()
+        public void Will_Load_4_Models_When_4_Results()
         {
             IEventProvider meetupStubbedProvider = new DiskEventProvider("/Doubles/meetup_open_events_response_stub.json");
             eventsLoader = new EventsLoader(meetupStubbedProvider);
@@ -55,6 +55,22 @@ namespace EventLst.Core.Tests
             var events = eventsLoader.Load();
 
             Assert.AreEqual(4, events.Count);
+        }
+
+        [Test]
+        public void Will_Map_Dto_Properties_To_Model_Properties()
+        {
+            IEventProvider meetupStubbedProvider = new DiskEventProvider("/Doubles/meetup_open_events_response_stub.json");
+            eventsLoader = new EventsLoader(meetupStubbedProvider);
+
+            PopulateCoOrds();
+
+            var firstEvent = eventsLoader.Load()[0];
+
+            Assert.AreEqual(firstEvent.Name, "The Oxford Spanish Language Exchange Meetup");
+            Assert.AreEqual(firstEvent.DateAndTime, new DateTime(2015,03,04,18,30,00));
+            Assert.AreEqual(firstEvent.City, "Oxford");
+            Assert.AreEqual(firstEvent.HtmlDescription, "<h1>I am the description</h1>");
         }
 
         private void PopulateCoOrds()
