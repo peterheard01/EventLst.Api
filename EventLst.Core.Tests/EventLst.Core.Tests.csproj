@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DirectorBuilder.cs" />
     <Compile Include="DiskEventProvider.cs" />
     <Compile Include="Event_Director_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
