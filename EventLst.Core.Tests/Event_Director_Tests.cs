@@ -4,6 +4,14 @@ using Moq;
 
 namespace EventLst.Core.Tests
 {
+
+    //public class DirectorBuilder
+    //{
+    //    private Mock<IEventProvider> provider;
+    //    private ResultsDirector eventsDirector;
+    //    private EventBuilder eventBuilder;
+    //}
+
     [TestFixture]
     public class EventLoaderTests
     {
