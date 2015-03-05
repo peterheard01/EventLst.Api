@@ -42,10 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EventBuilder.cs" />
     <Compile Include="EventModel.cs" />
     <Compile Include="EventsDtoMapper.cs" />
-    <Compile Include="EventsLoader.cs" />
+    <Compile Include="EventsDirector.cs" />
+    <Compile Include="IBuilder.cs" />
     <Compile Include="IEventProvider.cs" />
+    <Compile Include="LocationSearchModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

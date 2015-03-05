@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DiskEventProvider.cs" />
-    <Compile Include="Event_Loader_Tests.cs" />
+    <Compile Include="Event_Director_Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

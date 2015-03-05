@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace EventLst.Core
 {
-    public class EventsDtoMapper
+    public interface IDtoMapper<T>
+    {
+        List<T> Map(dynamic json);
+    }
+
+    public class EventsDtoMapper : IDtoMapper<EventModel>
     {
         public List<EventModel> Map(dynamic json)
         {
