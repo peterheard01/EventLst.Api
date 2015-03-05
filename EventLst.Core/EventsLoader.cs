@@ -35,16 +35,6 @@ namespace EventLst.Core
             foreach (var dto in jsonAsDynamicObject.results)
             {
                 retModels.Add(new EventModel());
-
-                //DateTime.
-
-                //retModels.Add(new EventModel()
-                //{
-                //    Name = dto.name,
-                //    DateAndTime = dto.created
-                //    City = dto.venue.city
-
-                //});
             }
 
             return retModels;
