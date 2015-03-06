@@ -1,7 +1,7 @@
 ﻿using System.Net;
 using EventLst.Core;
 
-namespace EventLst.Controllers
+namespace EventLst.Providers
 {
     public class MeetupProvider : IEventProvider
     {

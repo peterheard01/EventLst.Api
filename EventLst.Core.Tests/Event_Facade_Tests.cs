@@ -15,6 +15,8 @@ namespace EventLst.Core.Tests
             _eventFacadeWithDiskStub = new EventFacade(new EventBuilder(new DiskEventProvider(@"Doubles\\meetup_open_events_response_stub.json"), new EventsDtoMapper()));
         }
 
+
+
         [Test]
         public void EventFacade_Will_Throw_Exception_If_Lon_Missing()
         {
@@ -51,13 +53,29 @@ namespace EventLst.Core.Tests
         [Test]
         public void EventFacade_Will_Map_Dto_Properties_To_Model_Properties()
         {
-            var events = _eventFacadeWithDiskStub.GetEventsInGeoArea("1.1", "1.2"); ;
+            var events = _eventFacadeWithDiskStub.GetEventsInGeoArea("1.1", "1.2");
 
             var firstEvent = events[0];
 
             Assert.AreEqual(firstEvent.Name, "The Oxford Spanish Language Exchange Meetup");
             Assert.AreEqual(firstEvent.DateAndTime, new DateTime(2015, 03, 04, 18, 30, 00));
             Assert.AreEqual(firstEvent.City, "Oxford");
+            Assert.AreEqual(firstEvent.HtmlDescription, "<h1>I am the description</h1>");
+        }
+
+
+        [Test]
+        public void Event_Facade_Will_Not_Map_Venue_Details_If_Missing()
+        {
+            var facade = new EventFacade(new EventBuilder(new DiskEventProvider(@"Doubles\\meetup_open_events_response_stub_missing_venue.json"), new EventsDtoMapper()));
+
+            var events = facade.GetEventsInGeoArea("1.1", "1.2");
+
+            var firstEvent = events[0];
+
+            Assert.AreEqual(firstEvent.Name, "Rendez-vous avec Philippe Geluk!");
+            Assert.AreEqual(firstEvent.DateAndTime, new DateTime(2015, 03, 06, 17, 15, 00));
+            Assert.AreEqual(firstEvent.City, null);
             Assert.AreEqual(firstEvent.HtmlDescription, "<h1>I am the description</h1>");
         }
 

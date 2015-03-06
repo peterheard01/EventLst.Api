@@ -60,6 +60,9 @@
     <None Include="Doubles\meetup_open_events_response_stub.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="Doubles\meetup_open_events_response_stub_missing_venue.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

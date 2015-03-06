@@ -10,13 +10,16 @@ namespace EventLst.Core
             var retModels = new List<EventModel>();
             foreach (var dto in json.results)
             {
-                retModels.Add(new EventModel()
+                var eventModel = new EventModel();
+                eventModel.Name = dto.name;
+                eventModel.DateAndTime = FromUnixTime(Convert.ToInt64(dto.time));
+                eventModel.HtmlDescription = dto.description;
+
+                if (dto.venue != null)
                 {
-                    Name = dto.name,
-                    DateAndTime = FromUnixTime(Convert.ToInt64(dto.time)),
-                    City = dto.venue.city,
-                    HtmlDescription = dto.description
-                });
+                    eventModel.City = dto.venue.city;
+                }
+                retModels.Add(eventModel);
             }
             return retModels;
         }

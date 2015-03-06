@@ -1,0 +1,47 @@
+{  
+	"results" : [
+			{
+			"utc_offset" : 0,
+			"headcount" : 0,
+			"distance" : 23.73138999938965,
+			"visibility" : "public",
+			"waitlist_count" : 0,
+			"created" : 1423072394000,
+			"maybe_rsvp_count" : 0,
+			"description" : "<h1>I am the description</h1>",
+			"event_url" : "http://www.meetup.com/OxfordFrenchExpats/events/220302826/",
+			"yes_rsvp_count" : 8,
+			"duration" : 4500000,
+			"name" : "Rendez-vous avec Philippe Geluk!",
+			"id" : "220302826",
+			"time" : 1425662100000,
+			"updated" : 1423072394000,
+			"group" : {
+				"join_mode" : "open",
+				"created" : 1232622404000,
+				"name" : "Les Expatriés Francophones d'Oxford",
+				"group_lon" : -1.2599999904632568,
+				"id" : 1364043,
+				"urlname" : "OxfordFrenchExpats",
+				"group_lat" : 51.7599983215332,
+				"who" : "Sympathiques Expatriés"
+			},
+			"status" : "upcoming"
+		}
+	],
+	"meta" : {
+		"next" : "https://api.meetup.com/2/open_events?and_text=False&offset=1&sign=True&format=json&lon=-1.0073433&limited_events=False&photo-host=public&page=20&radius=25.0&lat=51.4552534&key=243f7745505b6e6d4c1b472860346554&desc=False&status=upcoming",
+		"method" : "OpenEvents",
+		"total_count" : 763,
+		"link" : "https://api.meetup.com/2/open_events",
+		"count" : 19,
+		"description" : "Searches for recent and upcoming public events hosted by Meetup groups. Its search window  is the past one month through the next three months, and is subject to change. Open Events is optimized to search for current events by location, category, topic, or text, and only lists Meetups that have **3 or more RSVPs**. The number or results returned with each request is not guaranteed to be the same as the page size due to secondary filtering. If you're looking for a particular event or events within a particular group, use the standard [Events](/meetup_api/docs/2/events/) method.",
+		"lon" : -1.0073433,
+		"title" : "Meetup Open Events v2",
+		"url" : "https://api.meetup.com/2/open_events?and_text=False&offset=0&sign=True&format=json&lon=-1.0073433&limited_events=False&photo-host=public&page=20&radius=25.0&lat=51.4552534&key=243f7745505b6e6d4c1b472860346554&desc=False&status=upcoming",
+		"signed_url" : "https://api.meetup.com/2/open_events?and_text=False&offset=0&format=json&lon=-1.0073433&limited_events=False&photo-host=public&page=20&radius=25.0&lat=51.4552534&desc=False&status=upcoming&sig_id=29740122&sig=02a39f52196bafee26bcc782a556f0b75a2aea13",
+		"id" : "",
+		"updated" : 1425643794168,
+		"lat" : 51.4552534
+	}
+}
