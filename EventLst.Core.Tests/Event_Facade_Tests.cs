@@ -15,8 +15,6 @@ namespace EventLst.Core.Tests
             _eventFacadeWithDiskStub = new EventFacade(new EventBuilder(new DiskEventProvider(@"Doubles\\meetup_open_events_response_stub.json"), new EventsDtoMapper()));
         }
 
-
-
         [Test]
         public void EventFacade_Will_Throw_Exception_If_Lon_Missing()
         {

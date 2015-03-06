@@ -8,6 +8,14 @@ namespace EventLst.Core
         public List<EventModel> Map(dynamic json)
         {
             var retModels = new List<EventModel>();
+            
+            MapResults(json, retModels);
+
+            return retModels;
+        }
+
+        private void MapResults(dynamic json, List<EventModel> retModels)
+        {
             foreach (var dto in json.results)
             {
                 var eventModel = new EventModel();
@@ -15,13 +23,18 @@ namespace EventLst.Core
                 eventModel.DateAndTime = FromUnixTime(Convert.ToInt64(dto.time));
                 eventModel.HtmlDescription = dto.description;
 
-                if (dto.venue != null)
-                {
-                    eventModel.City = dto.venue.city;
-                }
+                MapVenueDetails(dto, eventModel);
+
                 retModels.Add(eventModel);
             }
-            return retModels;
+        }
+
+        private static void MapVenueDetails(dynamic dto, EventModel eventModel)
+        {
+            if (dto.venue != null)
+            {
+                eventModel.City = dto.venue.city;
+            }
         }
 
         private DateTime FromUnixTime(long unixTimeMilliSeconds)
