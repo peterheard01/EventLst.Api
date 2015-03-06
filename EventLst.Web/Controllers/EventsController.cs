@@ -12,9 +12,9 @@ namespace EventLst.Controllers
     {
         public EventFacade _facade { get; set; }
 
-        public EventsController(EventFacade injectedFacade)
+        public EventsController()
         {
-            _facade = injectedFacade;
+            _facade = new EventFacade(new EventBuilder(new MeetupProvider(),new EventsDtoMapper()));
         }
 
         public List<EventModel> Get(string lon, string lat)

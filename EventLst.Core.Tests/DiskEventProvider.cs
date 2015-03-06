@@ -17,7 +17,7 @@ namespace EventLst.Core.Tests
 
         public dynamic Load(string lon, string lat)
         {
-            return File.ReadAllText(@"Doubles\\meetup_open_events_response_stub.json");
+            return File.ReadAllText(_path);
         }
     }
 }

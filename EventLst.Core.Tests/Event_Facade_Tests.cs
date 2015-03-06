@@ -12,7 +12,7 @@ namespace EventLst.Core.Tests
         [SetUp]
         public void Setup()
         {
-            _eventFacadeWithDiskStub = new EventFacade(new EventBuilder(new DiskEventProvider("/Doubles/meetup_open_events_response_stub.json"), new EventsDtoMapper()));
+            _eventFacadeWithDiskStub = new EventFacade(new EventBuilder(new DiskEventProvider(@"Doubles\\meetup_open_events_response_stub.json"), new EventsDtoMapper()));
         }
 
         [Test]
