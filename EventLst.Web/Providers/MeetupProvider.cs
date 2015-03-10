@@ -26,7 +26,7 @@ namespace EventLst.Providers
                 "https://api.meetup.com/2/open_events?sign=true&photo-host=public" +
                 "&lon=" + lon + 
                 "&lat=" + lat +
-                "&page=20&key=" + key);
+                "&page=50&key=" + key);
         }
     }
 }
