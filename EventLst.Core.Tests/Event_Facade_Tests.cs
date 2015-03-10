@@ -7,6 +7,10 @@ namespace EventLst.Core.Tests
     [TestFixture]
     public class EventFacadeTests
     {
+        protected string id;
+        public string id2;
+        private string id3;
+
         public EventFacade _eventFacadeWithDiskStub;
 
         [SetUp]
