@@ -21,6 +21,23 @@ namespace EventLst
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+
+            KeepAppPoolAliveJob();
+        }
+
+        private static void KeepAppPoolAliveJob()
+        {
+            var schedulerFactory = new StdSchedulerFactory();
+            var scheduler = schedulerFactory.GetScheduler();
+            scheduler.Start();
+
+            var job = JobBuilder.Create<KeepAppPoolAliveJob>().Build();
+
+            var trigger = TriggerBuilder.Create()
+                .WithSimpleSchedule(x => x.WithIntervalInSeconds(29).RepeatForever())
+                .Build();
+
+            scheduler.ScheduleJob(job, trigger);
         }
     }
 }
