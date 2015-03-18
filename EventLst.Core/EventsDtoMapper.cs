@@ -16,7 +16,6 @@ namespace EventLst.Core
 
         private void MapResults(dynamic json, List<EventModel> retModels)
         {
-            var count = 0;
             foreach (var dto in json.results)
             {
                 var eventModel = new EventModel();
@@ -27,8 +26,6 @@ namespace EventLst.Core
                 MapVenueDetails(dto, eventModel);
 
                 retModels.Add(eventModel);
-
-                count++;
             }
         }
 
