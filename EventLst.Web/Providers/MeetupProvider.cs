@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.Net;
+using System.Text;
 using EventLst.Core;
 using EventLst.Core.Application;
 
@@ -20,8 +21,10 @@ namespace EventLst.Providers
 
             string key = Config.Get("MeetupApiKey");
 
-            return
-                new WebClient().
+            var webClient = new WebClient();
+            webClient.Encoding = Encoding.UTF8;
+
+            return webClient.
                 DownloadString(
                 "https://api.meetup.com/2/open_events?sign=true&photo-host=public" +
                 "&lon=" + lon + 

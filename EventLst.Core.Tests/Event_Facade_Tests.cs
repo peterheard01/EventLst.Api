@@ -59,7 +59,7 @@ namespace EventLst.Core.Tests
 
             var firstEvent = events[0];
 
-            Assert.AreEqual(firstEvent.Name, "The Oxford Spanish Language Exchange Meetup");
+            Assert.AreEqual(firstEvent.Name, "Free Meditation & Yoga - Start at 7.30pm. Wednesdays. 14 Jan to 25th Mar 2015");
             Assert.AreEqual(firstEvent.DateAndTime, new DateTime(2015, 03, 04, 18, 30, 00));
             Assert.AreEqual(firstEvent.City, "Oxford");
             Assert.AreEqual(firstEvent.HtmlDescription, "<h1>I am the description</h1>");

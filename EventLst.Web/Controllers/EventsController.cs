@@ -16,7 +16,7 @@ namespace EventLst.Controllers
 
         public List<EventModel> Get(string lon, string lat)
         {
-            return _facade.GetEventsInGeoArea(lon,lat);
+            return _facade.GetEventsInGeoArea(lon, lat);
         }
     }
 }

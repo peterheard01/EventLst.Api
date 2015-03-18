@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace EventLst.Core
@@ -32,8 +34,8 @@ namespace EventLst.Core
 
             var jsonString = _provider.Load(InputModel.Lon, InputModel.Lat);
 
-            _json = JObject.Parse(jsonString);   
-
+            _json = JsonConvert.DeserializeObject(jsonString);
+               
         }
 
         public void Map()
