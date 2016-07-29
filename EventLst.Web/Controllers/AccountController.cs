@@ -1,3 +1,5 @@
+//I apologise on Microsofts behalf for this file. For I did not write it. It was done by machine (visual studio)
+
 ﻿using System;
 using System.Collections.Generic;
 using System.Net.Http;
